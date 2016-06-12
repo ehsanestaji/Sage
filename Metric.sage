@@ -27,5 +27,8 @@ def is_resolving(S,G):
 #####
 ##### The following code find the metric dimension of graph G
 def dim(G):
-    V=G.vertices()
-    V=set(V)
+    P=Set(G.vertices()).subsets()
+    for j in range(1,len(P)):
+        if is_resolving(list(P[j]),G)==True:
+            print "The metric dimension of "+ G.name()+" with "+ str(len(G.vertices())) + " vertices is " + str(len(P[j]))
+            break
