@@ -1,6 +1,4 @@
 #### This is new code
-def 
-
 G=graphs.PathGraph(5)
 H=graphs.CompleteGraph(4)
 G.wiener_index()
@@ -14,7 +12,7 @@ graphs_list.show_graphs(L)
 
 for i in range(1,len(L)):
     L[i].wiener_index(),L[i].diameter()
-    #L[i].show()
+    L[i].show()
 
 
 
